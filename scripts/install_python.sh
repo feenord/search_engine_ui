@@ -11,6 +11,7 @@ cd search_engine_ui
 sudo apt-get install python -y
 sudo apt-get -y install python3-pip 
 sudo pip3 install -r requirements.txt
+sudo pip3 install itsdangerous==2.0.1
 sudo apt-get install mc -y
 cp ./scripts/crawler-ui.service /etc/systemd/system/
 sudo systemctl enable crawler-ui.service
