@@ -12,8 +12,8 @@ sudo apt-get install python -y
 sudo apt-get -y install python3-pip 
 sudo pip3 install -r requirements.txt
 sudo apt-get install mc -y
-#cp ./scripts/crawler.service /etc/systemd/system/
-#sudo systemctl enable crawler.service
-#sudo systemctl start crawler.service
-#sudo systemctl status crawler.service 
+cp ./scripts/crawler-ui.service /etc/systemd/system/
+sudo systemctl enable crawler-ui.service
+sudo systemctl start crawler-ui.service
+sudo systemctl status crawler-ui.service 
 echo -ok
