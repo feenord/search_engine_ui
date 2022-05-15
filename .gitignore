@@ -1,2 +1,6 @@
 __pycache__
 .coverage
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
