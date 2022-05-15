@@ -5,7 +5,7 @@
             "service_account_key_file": "{{user `service_account_key_file`}}",
             "folder_id": "{{user `folder_id`}}",
             "source_image_family": "{{user `source_image_family`}}",
-            "image_name": "crawler-ui",
+            "image_name": "crawler-ui{{user `git_sha`}}",
             "image_family": "crawler-ui",
             "ssh_username": "ubuntu",
             "platform_id": "standard-v1",

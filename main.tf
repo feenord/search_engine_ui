@@ -13,7 +13,7 @@ provider "yandex" {
   zone      = var.zone
 } 
 data "yandex_compute_image" "crawler-ui" {
-  name       = "crawler-ui"
+  name       = "crawler-ui${var.git_sha}"
 }
 resource "yandex_compute_instance" "app" {
 name = "crawler-ui"
